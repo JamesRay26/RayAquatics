@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray Aquatics - Digos City</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="/Homepage - Photos/RayAquatics - UpperLeft Logo 1.png" alt="Ray Aquatics Logo"
+                    style="width: 270px; height: 100px; margin-right: 10px;">
+            </div>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#products">PRODUCTS</a></li>
+                    <li><a href="#contact">CONTACTS</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <a href="#products" class="btn-available-stocks">Available Stocks</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2>WHY RAY AQUATICS?</h2>
+                <div class="about-content">
+                    <p>Seeing how happy a nice aquarium made people feel at home, I decided to share this hobby with more people in our community. That's how Ray Aquatics came to life, starting small from a backyard here in Digos City.</p>
+
+                    <p>Today, Ray Aquatics is trusted for healthy fish, fresh aquatic plants, and a few aquarium supplies. We're committed to helping fellow fish keepers build amazing tanks that actually thrive. Whether you're just starting your first aquarium or adding to what you already have, we're here to help make your tank look better and stay healthy.</p>
+
+                    <p>Our dream is to someday open a real fish store here in Digos City, where everyone can find what they need in one place. Thank you for supporting this small local business that started from pure love for the hobby — just like how your plants keep growing in your tank.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products" id="products">
+            <div class="container">
+                <h2>WHAT WE OFFER</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <a href="livestock.html">
+                            <img src="/Livestock - Photos/Livestock - Guppy - RDSS.png" alt="RDSS PHOTO"
+                                style="height: 300px; width: 100%; object-fit: cover;">
+                            <div class="card-content">
+                                <h3>LIVESTOCK</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="plants.html">
+                            <img src="/Plants - Photos/Plants - Stem - Bacopa monnieri.png" alt="Bacopa monnieri PHOTO"
+                                style="height: 300px; width: 100%; object-fit: cover;">
+                            <div class="card-content">
+                                <h3>PLANTS</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="accessories.html">
+                            <img src="/Accessories - Photos/ACCESSORIES COVER.png" alt="Accessories PHOTO"
+                                style="height: 300px; width: 100%; object-fit: cover;">
+                            <div class="card-content">
+                                <h3>ACCESSORIES</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <div class="quote-content">
+                <p><strong>Aquascaping</strong> isn't just about water, plants, or fish — it's about creating a
+                    <strong>living world</strong> that inspires peace, patience, and wonder. It's a reminder that even
+                    in the <strong>smallest spaces</strong>, <strong>life can thrive</strong> and <strong>beauty can
+                        grow.</strong>
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Connect with Us</h3>
+                        <div class="contact-item">
+                            <img src="Contact - Icons/Facebook Icon.png" alt="Facebook Icon" class="contact-icon">
+                            <a href="https://www.facebook.com/profile.php?id=61561448735068" target="_blank">Ray
+                                Aquatics - Digos City</a>
+                        </div>
+                        <div style="margin-top: 4rem;"></div>
+                        <h3>Order via</h3>
+                        <ul>
+                            <li class="contact-item"><img src="Contact - Icons/Messenger Icon.png" alt="Messenger Icon"
+                                    class="contact-icon"><a href="https://www.messenger.com/t/370647616133889"
+                                    target="_blank">Messenger</a></li>
+                            <li class="contact-item"><img src="Contact - Icons/Call Icon.png" alt="Call Icon"
+                                    class="contact-icon">+63 955 071 7469</li>
+                            <li class="contact-item"><img src="Contact - Icons/Email Icon.png" alt="Call Icon"
+                                    class="contact-icon">jamesraygemilga26@gmail.com</li>
+                        </ul>
+                        <div style="margin-top: 3rem;"></div>
+                        <h3>Location</h3>
+                        <div class="contact-item"><img src="Contact - Icons/Location Icon.png" alt="Location Icon"
+                                class="contact-icon">Abella Subdivision, Digos City
+                        </div>
+                        <div class="map-container" id="map">
+
+                            <iframe src="https://www.google.com/maps?q=6.75952,125.35118&z=16&output=embed" width="100%"
+                                height="290" style="border:0;" allowfullscreen loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Get in Touch</h3>
+                        <form id="contact-form" onsubmit="submitForm(event); return false;">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone:</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label>Interested in:</label>
+                                <div class="form-group interest-labels">
+                                    <label><input type="checkbox" id="livestock" name="interest" value="livestock">
+                                        Livestock</label>
+                                    <label><input type="checkbox" id="plants" name="interest" value="plants">
+                                        Plants</label>
+                                    <label><input type="checkbox" id="accessories" name="interest" value="accessories">
+                                        Accessories</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Notify with Promos:</label>
+                                <div class="form-group interest-labels">
+                                    <label><input type="radio" id="newsletter_allow" name="newsletter" value="allow">
+                                        Allow</label>
+                                    <label><input type="radio" id="newsletter_dont_allow" name="newsletter"
+                                            value="dont_allow"> Don't Allow</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
