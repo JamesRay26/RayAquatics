@@ -84,7 +84,7 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url('/Homepage - Photos/RayAquatics - CoverPage 4.png');
+    background: url('Homepage - Photos/RayAquatics - CoverPage 4.png');
     background-size: cover;
     background-position: center;
     display: flex;
